@@ -1,0 +1,15 @@
+<% include ../fragments/header.ejs %>
+
+<div class="container">
+    <a href="/addAuthor" class="btn btn-primary">To add an Author</a>
+    <div class="content">
+      <ul class="books list-group">
+          <li class="list-group-item">
+              <span class="firstName"> <%= author.firstName %> </span>
+              <span class="lastName"> <%= author.lastName %> </span>
+          </li>
+
+      </ul>
+    </div>
+</div>
+<% include ../fragments/footer.ejs %>
