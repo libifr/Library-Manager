@@ -6,6 +6,7 @@ const bookSchema = {
     bookName: '',
     isbn: '',
     author: '',
+    img: '',
 
 
 };

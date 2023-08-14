@@ -7,8 +7,15 @@
       <ul class="books list-group">
           <% for (let author of authors) { %>
           <li class="list-group-item">
-              <span class="firstName"> <%= author.firstName %> </span>
-              <span class="lastName"> <%= author.lastName %> </span>
+              <div class="list-item">
+                  <div class="label-item">First name:</div>
+                  <div class="label-value"> <%= author.firstName %> </div>
+              </div>
+              <div class="list-item">
+                  <div class="label-item">Last name:</div>
+                  <div class="label-value"> <%= author.lastName %> </div>
+              </div>
+
           </li>
           <% } %>
 

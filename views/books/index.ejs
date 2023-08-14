@@ -5,9 +5,21 @@
       <ul class="books list-group">
           <% for (let book of books) { %>
           <li class="list-group-item">
-              <span class="bookName"><%= book.bookName %>,</span>
-              <span class="isbn"> isbn: <%= book.isbn %>, </span>
-              <span class="author"> Author: <%= book.author %> </span>
+              <div class="list-item">
+                  <div class="label-item">Book Name: </div>
+                  <div class="label-value"> <%= book.bookName %></div>
+              </div>
+              <div class="list-item">
+                  <div class="label-item">isbn: </div>
+                  <div class="label-value"> <%= book.isbn %></div>
+              </div>
+              <div class="list-item">
+                  <div class="label-item">Author: </div>
+                  <div class="label-value"> <%= book.author %></div>
+              </div>
+              <div class = book-img>
+              <img src="<%= book.img %>" class="author"  alt="book img" />
+              </div>
           </li>
           <% } %>
 

@@ -8,5 +8,5 @@ module.exports = {
         accessKeyId: 'AKIA5MXLB3YXXWZ5ZOMU',
         secretAccessKey: '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',
         region: 'us-west-1',
-    }
+    },
 };

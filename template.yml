@@ -27,7 +27,7 @@ Resources:
   HelloWorld:
     Type: AWS::Serverless::Function
     Properties:
-      FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-HelloWorld'
+      FunctionName: !Sub 'awscodestar-${ProjectId}-lambda-library-manager'
       Handler: index.handler
       Runtime: nodejs16.x
       Environment:

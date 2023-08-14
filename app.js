@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
+const fileUpload = require('express-fileupload');
 
 
 var indexRouter = require('./routes/index');
@@ -20,6 +21,9 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
+app.use(fileUpload({
+  limits: { fileSize: 50 * 1024 * 1024 },
+}));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(sassMiddleware({
