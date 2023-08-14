@@ -12,10 +12,6 @@ var booksRouter = require('./routes/books');
 var authorsRouter = require('./routes/authors');
 
 
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/myBooks');
-
-
 var app = express();
 
 // view engine setup
